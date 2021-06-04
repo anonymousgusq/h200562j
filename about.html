@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color: lightgray;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active"href= "about.html">About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="enquiries.html">Enquiries</a></li>
+</ul>
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(99,150,150);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(0,30,110);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="106" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="49" font-family="algerian"
+  x="50" y="86">GUS-Q</text>
+
+</svg>
+<div class="row">
+  <div class="column side">
+    <h2>Vision</h2>
+    <p>To achieve an exponential domination of the market share<br>To venture and part take in various trades</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>About Gus-Q Productions</h2>
+    <p>Gus-Q is a tech company founded in june 2021. It is a growing company with the prospects of venturing in a variety of trades. The company gives to its community in form of charity.</p>
+    <p><br> It offers various trades. Currently we are engaging Hardware Repairs. All computer repairs are cattered for. Furthermore it ventures in web designing and also offers web hosting services.</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Motto</h2>
+    <p>Pamusoroi we are here to stay and to make a statement.......</p>
+  </div>
+</div>
+<div class="footer">
+  <p>Copyright©GUS-Q Productions All Rights Reserved</p>
+</div>
+</body>
+</html>

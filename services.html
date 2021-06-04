@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+     background-image: url('yaaaaa.png');
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+  
+</style>
+</head>
+<body>
+<ul>
+  
+  <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About Us</a></li>
+  <li><a class="active"href= "services.html">Services</a></li>
+  <li><a href="enquiries.html">Enquiries</a></li>
+</ul>
+<h1>Product and Services on offer</h1>
+ <section>
+  <nav>
+ <h2>Services</h2>
+ <p>Hardware Repairs<br>Software Installations<br>Anti-Virus Scanning<br>Web Designing</p>
+  </nav>
+  
+  <article>
+    <h1>Products in Stock</h1>
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="ram.png"alt="ram chips"width="600"height="400">
+	<img src="ram.png">
+	</a>
+	<div class="desc">
+	"16gb ram"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="lcd.png"alt="LCD"width="600"height="400">
+	<img src="lcd.png">
+	</a>
+	<div class="desc">
+	"LCD $55"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="keyboards.png"alt="Keyboards"width="600"height="400">
+	<img src="keyboards.png">
+	</a>
+	<div class="desc">
+	"KEYBOARDS $35"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="motherboards.png"alt="Motherboard"width="500"height="300">
+	<img src="motherboards.png">
+	</a>
+	<div class="desc">
+	"Motherboard $65"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="tools.png"alt="Tools"width="600"height="400">
+	<img src="tools.png">
+	</a>
+	<div class="desc">
+	"Tools $75"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="batteries.png"alt="Batteries"width="600"height="400">
+	<img src="batteries.png">
+	</a>
+	<div class="desc">
+	"Batteries $45"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="screws.png"alt="screws"width="600"height="400">
+	<img src="screws.png">
+	</a>
+	<div class="desc">
+	"Screws $15"
+	</div>
+	</div>
+	</div>
+	
+	<div class="responsive">
+	<div class="gallery">
+	<a target="_blank"href="mouse.png"alt="Mouse"width="600"height="400">
+	<img src="mouse.png">
+	</a>
+	<div class="desc">
+	"Mouse $45"
+	</div>
+	</div>
+	</div>
+	
+	<div class="clearfix">
+	</div>
+	<div style="padding:6px;">
+	</div>
+  </article>
+</section>
+<div class="footer">
+  <p>Copyright©GUS-Q Productions All Rights Reserved</p>
+</div>
+</body>
+</html>
